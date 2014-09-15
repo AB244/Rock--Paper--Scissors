@@ -10,4 +10,20 @@ public class Scissors implements HandSign {
     @Override
     public int displayHandsign(){return R.drawable.scissors;}
 
+    @Override
+    public String WinLoseDraw() {
+
+        if(displayHandsign()==R.drawable.paper){
+
+            return "Win";
+
+        }
+
+        else if(displayHandsign()==R.drawable.rock) {
+
+            return "Lose";
+        }
+
+        else return "Draw";
+    }
 }

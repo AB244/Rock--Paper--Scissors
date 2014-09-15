@@ -8,6 +8,23 @@ import com.ajbenn04.alex.hw2rockpaperscissors.R;
 public class Rock implements HandSign {
 
     @Override
-    public int displayHandsign(){return R.drawable.fist;}
+    public int displayHandsign(){return R.drawable.rock;}
+
+    @Override
+    public String WinLoseDraw() {
+
+        if(displayHandsign()==R.drawable.scissors){
+
+            return "Win";
+
+        }
+
+        else if(displayHandsign()==R.drawable.paper) {
+
+            return "Lose";
+        }
+
+        else return "Draw";
+    }
 
 }

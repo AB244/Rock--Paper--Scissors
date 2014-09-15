@@ -26,14 +26,9 @@ public class DecisionLogic {
 
             }
                  else if(decision == 1) {
-                 return new Paper();
-
-                 } else if(decision == 2) {
-
                  return new Scissors();
 
-                 }
-            return new Paper();
+                 } else return new Paper();
     }
 
 }

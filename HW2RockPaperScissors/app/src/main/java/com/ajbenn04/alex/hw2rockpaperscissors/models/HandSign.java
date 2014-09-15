@@ -5,4 +5,6 @@ package com.ajbenn04.alex.hw2rockpaperscissors.models;
  */
 public interface HandSign {
     public int displayHandsign();
+
+    public String WinLoseDraw();
 }
