@@ -27,7 +27,7 @@ public class RockPaperScissors extends Activity {
                 HandSign sign = DecisionLogic.getInstance();
                 ImageView imageView = (ImageView) findViewById(R.id.imgView);
                 imageView.setImageResource(sign.displayHandsign());
-                Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw(),Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw("btn_rock", sign),Toast.LENGTH_LONG);
                 toast.show();
             }
         });
@@ -39,7 +39,7 @@ public class RockPaperScissors extends Activity {
                 HandSign sign = DecisionLogic.getInstance();
                 ImageView imageView = (ImageView) findViewById(R.id.imgView);
                 imageView.setImageResource(sign.displayHandsign());
-                Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw(),Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw("btn_paper", sign),Toast.LENGTH_LONG);
                 toast.show();
             }
         });
@@ -51,7 +51,7 @@ public class RockPaperScissors extends Activity {
                     HandSign sign = DecisionLogic.getInstance();
                     ImageView imageView = (ImageView) findViewById(R.id.imgView);
                     imageView.setImageResource(sign.displayHandsign());
-                    Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw(),Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw("btn_scissors", sign),Toast.LENGTH_LONG);
                     toast.show();
                 }
             });

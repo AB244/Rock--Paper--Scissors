@@ -1,5 +1,6 @@
 package com.ajbenn04.alex.hw2rockpaperscissors.models;
 
+import android.graphics.drawable.Drawable;
 import android.widget.Toast;
 
 import com.ajbenn04.alex.hw2rockpaperscissors.R;
@@ -17,15 +18,15 @@ public class Paper implements HandSign {
     }
 
     @Override
-    public String WinLoseDraw() {
+    public String WinLoseDraw(String button, HandSign sign) {
 
-        if(displayHandsign()==R.drawable.rock){
+        if(button.equals("btn_scissors")){
 
         return "Win";
 
         }
 
-        else if(displayHandsign()==R.drawable.scissors) {
+        else if(button.equals("btn_rock")) {
 
             return "Lose";
         }
