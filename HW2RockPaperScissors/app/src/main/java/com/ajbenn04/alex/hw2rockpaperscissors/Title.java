@@ -20,9 +20,6 @@ public class Title extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title);
-
-                ImageView imageView = (ImageView) findViewById(R.id.btn_start);
-                imageView.setImageResource(R.drawable.title);
     }
 
     public void gameStart(View view)
