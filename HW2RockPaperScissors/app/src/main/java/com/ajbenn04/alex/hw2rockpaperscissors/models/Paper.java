@@ -22,16 +22,19 @@ public class Paper implements HandSign {
 
         if(button.equals("btn_scissors")){
 
-        return "Win";
+            WinsLoseDraw.Wins++;
+
+        return "You Win!";
 
         }
 
         else if(button.equals("btn_rock")) {
 
-            return "Lose";
+            WinsLoseDraw.Losses++;
+            return "You Lose!";
         }
 
-        else return "Draw";
+        else WinsLoseDraw.Draws++; return "Draw!";
         }
 
 

@@ -17,15 +17,17 @@ public class Scissors implements HandSign {
 
         if(button.equals("btn_rock")){
 
-            return "Win";
+            WinsLoseDraw.Wins++;
+            return "You Win!";
 
         }
 
         else if(button.equals("btn_paper")) {
 
-            return "Lose";
+            WinsLoseDraw.Losses++;
+            return "You Lose!";
         }
 
-        else return "Draw";
+        else WinsLoseDraw.Draws++; return "Draw!";
     }
 }

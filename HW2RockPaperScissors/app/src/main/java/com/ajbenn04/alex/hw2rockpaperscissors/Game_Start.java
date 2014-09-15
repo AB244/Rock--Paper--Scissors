@@ -1,6 +1,7 @@
 package com.ajbenn04.alex.hw2rockpaperscissors;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -62,6 +63,11 @@ public class Game_Start extends Activity {
 
     }
 
+    public void goScores(View view)
+    {
+        Intent intent = new Intent(Game_Start.this, Scores.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

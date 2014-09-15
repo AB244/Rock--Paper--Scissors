@@ -9,4 +9,5 @@ public interface HandSign {
     public int displayHandsign();
 
     public String WinLoseDraw(String button, HandSign sign);
+
 }

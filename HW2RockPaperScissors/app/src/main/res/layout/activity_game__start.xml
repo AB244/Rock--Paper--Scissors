@@ -46,11 +46,23 @@
         android:adjustViewBounds="true"
         android:src="@drawable/title"
         android:id="@+id/imageDisplay"
-        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/btn_rock" />
+        android:layout_above="@+id/btn_rock"
+        android:layout_alignParentTop="true"
+        android:paddingTop="50dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Scores"
+        android:id="@+id/btn_Go_To_Scores"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="goScores"/>/>
+
 
 </RelativeLayout>
