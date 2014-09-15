@@ -25,10 +25,12 @@ public class RockPaperScissors extends Activity {
             @Override
             public void onClick(View view) {
                 HandSign sign = DecisionLogic.getInstance();
-                ImageView imageView = (ImageView) findViewById(R.id.imgView);
+                ImageView imageView = (ImageView) findViewById(R.id.imageDisplay);
                 imageView.setImageResource(sign.displayHandsign());
+                imageView.setScaleType(ImageView.ScaleType.FIT_XY);
                 Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw("btn_rock", sign),Toast.LENGTH_LONG);
                 toast.show();
+
             }
         });
 
@@ -37,8 +39,9 @@ public class RockPaperScissors extends Activity {
             @Override
             public void onClick(View view) {
                 HandSign sign = DecisionLogic.getInstance();
-                ImageView imageView = (ImageView) findViewById(R.id.imgView);
+                ImageView imageView = (ImageView) findViewById(R.id.imageDisplay);
                 imageView.setImageResource(sign.displayHandsign());
+                imageView.setScaleType(ImageView.ScaleType.FIT_XY);
                 Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw("btn_paper", sign),Toast.LENGTH_LONG);
                 toast.show();
             }
@@ -49,8 +52,9 @@ public class RockPaperScissors extends Activity {
                 @Override
                 public void onClick(View view) {
                     HandSign sign = DecisionLogic.getInstance();
-                    ImageView imageView = (ImageView) findViewById(R.id.imgView);
+                    ImageView imageView = (ImageView) findViewById(R.id.imageDisplay);
                     imageView.setImageResource(sign.displayHandsign());
+                    imageView.setScaleType(ImageView.ScaleType.FIT_XY);
                     Toast toast = Toast.makeText(view.getContext(),sign.WinLoseDraw("btn_scissors", sign),Toast.LENGTH_LONG);
                     toast.show();
                 }
