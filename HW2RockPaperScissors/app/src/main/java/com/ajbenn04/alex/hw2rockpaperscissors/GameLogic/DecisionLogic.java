@@ -11,6 +11,7 @@ import com.ajbenn04.alex.hw2rockpaperscissors.models.Paper;
 import com.ajbenn04.alex.hw2rockpaperscissors.models.Rock;
 import com.ajbenn04.alex.hw2rockpaperscissors.models.Scissors;
 
+import java.security.SecureRandom;
 import java.util.Date;
 import java.util.Random;
 
@@ -18,8 +19,11 @@ public class DecisionLogic {
 
         private DecisionLogic(){}
         public static HandSign getInstance() {
-            Random randomGenerator = new Random(new Date().getTime());
-            int decision = randomGenerator.nextInt(3);
+
+            SecureRandom rand = new SecureRandom();
+            byte[] output = new byte[20];
+            rand.nextBytes(output);
+            int decision = rand.nextInt(3);
 
         if(decision==0){
             return new Rock();
