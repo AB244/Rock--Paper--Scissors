@@ -4,6 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.ajbenn04.alex.hw2rockpaperscissors.GameLogic.DecisionLogic;
+import com.ajbenn04.alex.hw2rockpaperscissors.models.HandSign;
 
 
 public class RockPaperScissors extends Activity {
@@ -12,6 +19,37 @@ public class RockPaperScissors extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rock_paper_scissors);
+
+        Button btn1 = (Button) findViewById(R.id.btn_rock);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                HandSign sign = DecisionLogic.getInstance();
+                ImageView imageView = (ImageView) findViewById(R.id.imgView);
+                imageView.setImageResource(sign.displayHandsign());
+            }
+        });
+
+        Button btn2 = (Button) findViewById(R.id.btn_paper);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                HandSign sign = DecisionLogic.getInstance();
+                ImageView imageView = (ImageView) findViewById(R.id.imgView);
+                imageView.setImageResource(sign.displayHandsign());
+            }
+        });
+
+            Button btn3 = (Button) findViewById(R.id.btn_scissors);
+            btn3.setOnClickListener(new View.OnClickListener()  {
+                @Override
+                public void onClick(View view) {
+                    HandSign sign = DecisionLogic.getInstance();
+                    ImageView imageView = (ImageView) findViewById(R.id.imgView);
+                    imageView.setImageResource(sign.displayHandsign());
+                }
+            });
+
     }
 
 

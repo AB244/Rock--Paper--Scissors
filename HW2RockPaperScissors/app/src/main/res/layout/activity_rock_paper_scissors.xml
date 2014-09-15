@@ -35,15 +35,10 @@
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ic_launcher.png"
+        android:layout_width="match_parent"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/imgView"
+        android:src="@drawable/title"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
