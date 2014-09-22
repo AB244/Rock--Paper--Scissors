@@ -31,4 +31,9 @@ public class Rock implements HandSign {
         else WinsLoseDraw.Draws++; return "Draw!";
     }
 
+    public String Nameof(){
+
+        return "rock";
+    }
+
 }

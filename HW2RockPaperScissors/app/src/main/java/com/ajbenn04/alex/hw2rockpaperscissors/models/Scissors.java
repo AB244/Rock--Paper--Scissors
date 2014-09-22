@@ -30,4 +30,9 @@ public class Scissors implements HandSign {
 
         else WinsLoseDraw.Draws++; return "Draw!";
     }
+
+    public String Nameof(){
+
+        return "Scissors";
+    }
 }

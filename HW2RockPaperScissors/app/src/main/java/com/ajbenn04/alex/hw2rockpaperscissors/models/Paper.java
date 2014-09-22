@@ -35,8 +35,12 @@ public class Paper implements HandSign {
             return "You Lose!";
         }
 
-        else WinsLoseDraw.Draws++; return "Draw!";
+        else {WinsLoseDraw.Draws++; return "Draw!";}
         }
 
+    public String Nameof(){
+
+        return "paper";
+    }
 
 }

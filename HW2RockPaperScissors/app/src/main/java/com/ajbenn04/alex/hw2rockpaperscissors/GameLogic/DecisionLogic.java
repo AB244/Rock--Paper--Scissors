@@ -12,12 +12,9 @@ import com.ajbenn04.alex.hw2rockpaperscissors.models.Rock;
 import com.ajbenn04.alex.hw2rockpaperscissors.models.Scissors;
 
 import java.security.SecureRandom;
-import java.util.Date;
-import java.util.Random;
 
 public class DecisionLogic {
 
-        private DecisionLogic(){}
         public static HandSign getInstance() {
 
             SecureRandom rand = new SecureRandom();
